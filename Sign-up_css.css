@@ -1,0 +1,51 @@
+ *{
+ font-family: Arial, Helvetica, sans-serif; 
+}
+body{
+    text-align: center;
+}
+
+.HEADER{
+    text-align: center;
+    color: gray;
+    
+}
+.head{
+    text-align: center;
+    color: black;
+}
+.box{
+   
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    margin: 2%;
+    padding: 1%;
+    margin-left: 23%;
+    background-color: green;
+    
+}
+.main{
+    text-align: center;
+}
+.Name{
+    width: 80%;
+    margin: 1.5%;
+    padding: 1%;
+    border: 2px solid black;
+ border-radius: 6px;
+    
+}
+.phone{
+    width: 80%;
+    padding: 1%;
+    border: 2px solid black;
+}
+.btn{
+    width: 12%;
+    margin: 1%;
+    padding: 0.8%;
+    border-radius: 4px;
+    background-color: yellowgreen;
+}
