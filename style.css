@@ -1,17 +1,21 @@
-.wrapper{
-    /* border: 2px solid black; */
+.wrapper {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 1%;
     padding: 1%;
 }
-
-.name{
-    width: 70%;
-    border: 2px solid black;
-    border-radius: 4px;
-    margin: 1%;
-    padding: 4px;
+body{
+    background-color: grey;
 }
-#this{
+
+.name {
+    width: 70%;
+    border-color: grey;
+    border-radius: 5px;
+    margin: 1%;
+    padding: 6px;
+}
+
+#this {
     width: 10%;
     margin: 2px;
     padding: 4px;
@@ -20,60 +24,108 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.main{
-    border: 2px solid black;
+.main {
+border-color: transparent;
     margin: 1%;
-    padding: 1%;
-    background-color: gray;
+    padding: 2%;
+    background-color: grey;
+    height: 90%;
 }
-.footer{
-    background-color:  red;
+
+.footer {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
-.your{
+
+.your {
     display: inline-block;
     width: 10%;
     background-color: white;
     margin: 1%;
     padding: 1%;
-    
-   
-    
+
 }
-a{
+
+a {
     text-decoration: none;
     color: red;
 }
- li{
-    font-weight: bold;
-   margin: 1%;
-   list-style: none;
-display: inline;
-text-align: center;
 
-   
+li {
+    font-weight: bold;
+    margin: 1%;
+    list-style: none;
+    display: inline;
+    text-align: center;
+
+
 }
-li:hover{
+
+li:hover {
     color: black;
 }
-.me{
+
+.me {
     text-align: center;
 }
-*{
+
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
-.login{
+
+.login {
     padding: 1%;
     margin: auto;
     border-radius: 4px;
 
 }
-li.profile{
-    font-weight: bold;
-   margin: 1%;
-   list-style: none;
-display: inline;
-text-align: center;
 
-   
+li.profile {
+    font-weight: bold;
+    margin: 1%;
+    list-style: none;
+    display: inline;
+    text-align: center;
+
+
+}
+
+.p1 {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:transparent;
+    position: relative;
+    top: 10px;
+    font-size: larger;
+    color:black ;
+    font-weight: 5px;
+
+
+}
+
+.p2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: transparent;
+}
+.button{
+    cursor: pointer;
+}
+.a{
+    border-color: black 2px;
+    border-radius: 3px;
+}
+.home{
+    background-color:antiquewhite;
+    padding: 5px;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: grey;
+    cursor: pointer;
+}
+.logout{
+  color: red;
+  background-color: transparent;
+  border-color: transparent;
+
 }
