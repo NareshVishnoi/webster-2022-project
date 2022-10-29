@@ -3,6 +3,7 @@
 }
 body{
     text-align: center;
+    background-color: grey;
 }
 
 .HEADER{
@@ -11,6 +12,7 @@ body{
     
 }
 .head{
+    margin-top: 20px;
     text-align: center;
     color: black;
 }
@@ -19,11 +21,10 @@ body{
     text-align: center;
     width: 50%;
     height: 50%;
-    border: 2px solid black;
     margin: 2%;
     padding: 1%;
     margin-left: 23%;
-    background-color: green;
+    background-color:grey;
     
 }
 .main{
@@ -33,19 +34,47 @@ body{
     width: 80%;
     margin: 1.5%;
     padding: 1%;
-    border: 2px solid black;
  border-radius: 6px;
+ background-color: white;
+ border-color: transparent;
     
 }
 .phone{
     width: 80%;
     padding: 1%;
-    border: 2px solid black;
+    background-color:white;
+    
 }
 .btn{
+    color: white;
     width: 12%;
     margin: 1%;
+    margin-top: 45px;
     padding: 0.8%;
     border-radius: 4px;
-    background-color: yellowgreen;
+    background-color: green;
+    border-color: transparent;
+    cursor: pointer;
+    width: 150px;
+}
+.name:hover {
+    background: color #bad1c2;
+    border-radius: 2px;
+    border-color: red;
+    
+}
+.btn:hover{
+    
+}
+.shop{
+    
+color: black;
+}
+.a1{
+    position: relative;
+    top: 10%;
+    margin-top: 45px;
+}
+.field{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
