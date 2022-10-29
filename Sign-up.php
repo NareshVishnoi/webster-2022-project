@@ -8,18 +8,19 @@ $con=mysqli_connect($server,$username,$password);
 if(!$con){
     die("connection failure ".mysqli_connect_error());
 }
-$name=$_POST['name'];
-$phone=$_POST['phone'];
+$name=$_POST['name']; 
+$password=$_POST['password'];
 $email=$_POST['email'];
-$sql="INSERT INTO `login`.`login`( `name`, `phone`, `email`) VALUES ('$name', '$phone', '$email');";
-// echo $sql;
+if(!empty($name) && !empty($email)){
+$sql="INSERT INTO `login`.`login`( `name`, `password`, `email`) VALUES ('$name', '$password', '$email');";
+
 if($con->query($sql)==true){
    $insert=true;
-//    header("Location: https://www.example.com/login.php");
 
 }
 else{
     echo "ERROR: $sql <br> $con->error";
+}
 }
 $con->close();
 
@@ -32,39 +33,34 @@ if($insert==true){
     <head>
         <link rel="stylesheet" href="Sign-up_css.css">
         <div class="HEADER">
-        <h1>SMITH-E-SHOP</h1>
+        <!-- <h1 class="shop">SMIT-E-SHOP</h1> -->
 </div>
     </head>
     <body>
         <!-- head goes from here  -->
         <div class="head">
-            fill the following credentials to login in our web
+        <a class="a1" href="login.php"><img src="https://see.fontimg.com/api/renderfont4/VGORe/eyJyIjoiZnMiLCJoIjozMywidyI6MTUwMCwiZnMiOjIyLCJmZ2MiOiIjRkZGRUZFIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/U01JVC1FLVNIT1A/minecraft-ten.png" alt=""></a>
+            <h2 class="field">Register here</h2>
         </div>
-        <!-- head ends here  -->
-        <!-- main content form here  -->
-
-
-        <!-- here i am gonna put the differenret kind of tags which will help me to access all these  -->
-        <div class="main">
+       
             <div class="wrapper">
                 <div class="box">
                     <form action="Sign-up.php" method="post">
-                        <input type="text" name ="name" id="name" class="Name" placeholder="Enter your Name">
-                       
-                        <input type="phone" name="phone" id="phone" class="Name" placeholder="Enter your PhoneNo.">
-                        <input type="email" name="email"  id="email" class="Name" placeholder="Enter your email">
+                        <input type="text" name ="name" id="name" class="Name" placeholder="Enter Name">
+                        <input type="Password" name="password" id="password" class="Name" placeholder="Enter Password">
+                        <input type="email" name="email"  id="email" class="Name" placeholder="Enter Email address">
                         <br>
                        <button class="btn">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
-        <!-- main content ends here  -->
-        <!-- footer start from here  -->
+       
+
         <div class="footer">
 
         </div>
-        <!-- footer ends here  -->
+       
     </body>
 </html>
-<!-- here goes my php  -->
+
